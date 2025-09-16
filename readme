@@ -1,0 +1,65 @@
+# Discord Multi-Bot Spam Tool ⚡
+
+![Python](https://img.shields.io/badge/Python-3.12-green)
+![Discord](https://img.shields.io/badge/Discord-Bot-blue)
+
+**A modern, sequential Discord spam bot that automatically skips blocked bots.**  
+This tool allows multiple bot tokens to send spam messages to a specified server.
+
+---
+
+## ⚙️ Features
+
+- Sequential execution of multiple bot tokens.  
+- Automatically skips blocked bots and continues with the next one.  
+- Accepts bot tokens and server ID via command line (`-t` and `--guildid`).  
+- Defaults to pre-configured tokens and guild ID if none are provided.  
+- Detects writable channels and lets the user choose.  
+- Built with modern Python `asyncio` and `discord.py`.
+
+---
+
+## 🛠️ Requirements
+
+- Python 3.12 or higher  
+- Install dependencies:
+
+```bash
+pip install discord.py
+Bots must be active in the server and have these permissions:
+
+View Channels
+
+Send Messages
+
+🚀 Usage
+Using default tokens and guild ID:
+bash
+Kodu kopyala
+python main.py
+Using command line options:
+bash
+Kodu kopyala
+python main.py -t TOKEN1,TOKEN2,TOKEN3 --guildid 123456789012345678
+-t or --tokens → Comma-separated bot tokens
+
+--guildid → Guild ID where bots will send messages
+
+⚠️ Important Notes
+Use only on your own test servers.
+
+Discord may ban accounts or bots for spam or abuse.
+
+Bots cannot join servers automatically, they must be added manually.
+
+📌 Setup
+Create bots on Discord Developer Portal and get their tokens.
+
+Invite the bots to your server (OAuth2 → bot scope → required permissions).
+
+Run install.bat (Windows) or install.sh (Linux/macOS) to install dependencies.
+
+Run main.py to list channels, select one, and start the spam sequence.
+
+📝 License
+This project is for educational and testing purposes only. Users are fully responsible for their actions.
